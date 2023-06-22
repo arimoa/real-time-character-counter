@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: linear-gradient(to left, #ea9580, #c4583e);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 30%;
+}
+.input {
+  width: 100%;
+  height: 8em;
+  margin: 20px 0;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  resize: none;
+}
+.input::placeholder {
+  text-align: top;
+}
+.counter {
+  display: flex;
+  justify-content: space-between;
+}
+#counter p {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 960px) {
+  .counter {
+    flex-direction: column;
+  }
+}
